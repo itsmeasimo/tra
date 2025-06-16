@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   
@@ -20,6 +21,11 @@
       <image:loc>https://transferko.rs/IMG_20250528_120341-removebg-preview.png</image:loc>
       <image:title>Transferko vozilo - profesionalni aerodromski transfer</image:title>
       <image:caption>Licencirano vozilo za aerodromski transfer Novi Sad</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://transferko.rs/1672932453transparent.png</image:loc>
+      <image:title>Transferko Logo</image:title>
+      <image:caption>Transferko - pouzdani aerodromski transfer Novi Sad</image:caption>
     </image:image>
   </url>
   
@@ -67,6 +73,70 @@
     <lastmod>2024-12-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://transferko.rs/transfer-novi-sad-temisvar</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://transferko.rs/transfer-novi-sad-nis</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://transferko.rs/transfer-novi-sad-segedin</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Additional SEO pages -->
+  <url>
+    <loc>https://transferko.rs/aerodromski-transfer-novi-sad</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://transferko.rs/taxi-aerodrom-beograd</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://transferko.rs/prevoz-aerodrom-nikola-tesla</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://transferko.rs/licencirani-prevoznik-novi-sad</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://transferko.rs/fiksne-cene-transfer</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://transferko.rs/24-7-aerodromski-prevoz</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   
 </urlset>

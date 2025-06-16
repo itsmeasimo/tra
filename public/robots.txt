@@ -10,12 +10,56 @@ Crawl-delay: 1
 # Specific directives for search engines
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
 User-agent: Slurp
 Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
 
 # Block admin panel from indexing
 Disallow: /admin
+Disallow: /admin/
+
+# Block temporary files
+Disallow: /tmp/
+Disallow: /*.tmp$
+
+# Block development files
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /.git/
+
+# Allow important files
+Allow: /sitemap.xml
+Allow: /robots.txt
+Allow: /favicon.ico
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.css$
+Allow: /*.js$
+
+# Priority pages for faster indexing
+# Homepage
+# /transfer-novi-sad-aerodrom-beograd
+# /transfer-novi-sad-budimpesta
+# /transfer-novi-sad-zagreb

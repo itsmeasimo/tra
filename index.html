@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     
-    <!-- Favicon -->
+    <!-- Favicon - Updated for better SEO -->
     <link rel="icon" type="image/png" href="/1672932453transparent.png" />
-    <link rel="apple-touch-icon" href="/1672932453transparent.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/1672932453transparent.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/1672932453transparent.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/1672932453transparent.png" />
     <link rel="shortcut icon" href="/1672932453transparent.png" />
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- Primary Meta Tags -->
+    <!-- Primary Meta Tags - Enhanced for SEO -->
     <title>Aerodromski Transfer Novi Sad | Transferko - Pouzdani Prevoz do Aerodroma</title>
     <meta name="title" content="Aerodromski Transfer Novi Sad | Transferko - Pouzdani Prevoz do Aerodroma" />
     <meta name="description" content="Profesionalni aerodromski transfer Novi Sad sa fiksnim cenama. Prevoz do aerodroma Beograd, Budimpešta, Zagreb. Licencirani prevoznik 24/7 dostupnost. Rezervišite odmah!" />
@@ -22,24 +24,26 @@
     <meta name="distribution" content="global" />
     <meta name="rating" content="general" />
     
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook - Enhanced with better image -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://transferko.rs/" />
     <meta property="og:title" content="Aerodromski Transfer Novi Sad | Transferko - Pouzdani Prevoz do Aerodroma" />
     <meta property="og:description" content="Profesionalni aerodromski transfer Novi Sad sa fiksnim cenama. Prevoz do aerodroma Beograd, Budimpešta, Zagreb. Licencirani prevoznik sa 10+ godina iskustva. Rezervišite pouzdani transfer 24/7!" />
-    <meta property="og:image" content="https://i.ibb.co/gbXHs3Sy/image.png" />
-    <meta property="og:image:alt" content="Transferko - Profesionalni transferi do aerodroma" />
+    <meta property="og:image" content="https://transferko.rs/image.png" />
+    <meta property="og:image:alt" content="Transferko - Profesionalni transferi do aerodroma sa Peugeot vozilom" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
     <meta property="og:locale" content="sr_RS" />
     <meta property="og:site_name" content="Transferko" />
     
-    <!-- Twitter -->
+    <!-- Twitter Card - Enhanced -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://transferko.rs/" />
     <meta property="twitter:title" content="Aerodromski Transfer Novi Sad | Transferko - Pouzdani Prevoz" />
     <meta property="twitter:description" content="Profesionalni aerodromski transfer sa fiksnim cenama. Prevoz do aerodroma Beograd, Budimpešta, Zagreb. Licencirani prevoznik 24/7." />
-    <meta property="twitter:image" content="https://transferko.rs/IMG_20250528_120341-removebg-preview.png" />
+    <meta property="twitter:image" content="https://transferko.rs/image.png" />
+    <meta property="twitter:image:alt" content="Transferko vozilo za aerodromski transfer" />
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://transferko.rs" />
@@ -56,9 +60,10 @@
     
     <!-- Preload critical images -->
     <link rel="preload" as="image" href="/1672932453transparent.png" />
+    <link rel="preload" as="image" href="/image.png" />
     <link rel="preload" as="image" href="/IMG_20250528_120341-removebg-preview.png" />
     
-    <!-- Structured Data for SEO -->
+    <!-- Enhanced Structured Data for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -69,7 +74,11 @@
       "telephone": "+381654512033",
       "email": "transferkons@gmail.com",
       "logo": "https://transferko.rs/1672932453transparent.png",
-      "image": "https://transferko.rs/IMG_20250528_120341-removebg-preview.png",
+      "image": [
+        "https://transferko.rs/image.png",
+        "https://transferko.rs/IMG_20250528_120341-removebg-preview.png",
+        "https://transferko.rs/1672932453transparent.png"
+      ],
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Novi Sad",
@@ -141,7 +150,7 @@
     }
     </script>
     
-    <!-- Additional Schema for Vehicle -->
+    <!-- Enhanced Vehicle Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -152,7 +161,39 @@
       "numberOfSeats": "4",
       "fuelType": "Gasoline",
       "vehicleSpecialUsage": "Taxi",
-      "image": "https://transferko.rs/IMG_20250528_120341-removebg-preview.png"
+      "image": "https://transferko.rs/image.png"
+    }
+    </script>
+    
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Transferko",
+      "url": "https://transferko.rs",
+      "logo": "https://transferko.rs/1672932453transparent.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+381654512033",
+        "contactType": "customer service",
+        "availableLanguage": ["Serbian", "English", "Russian"]
+      }
+    }
+    </script>
+    
+    <!-- WebSite Schema for Search Box -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Transferko",
+      "url": "https://transferko.rs",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://transferko.rs/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
     </script>
     
@@ -161,6 +202,14 @@
     
     <!-- Bing Webmaster Tools -->
     <meta name="msvalidate.01" content="your-bing-verification-code-here" />
+    
+    <!-- Additional SEO enhancements -->
+    <meta name="theme-color" content="#a3e635" />
+    <meta name="msapplication-TileColor" content="#a3e635" />
+    <meta name="application-name" content="Transferko" />
+    <meta name="apple-mobile-web-app-title" content="Transferko" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   </head>
   <body>
     <div id="root"></div>

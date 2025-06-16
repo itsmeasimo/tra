@@ -16,22 +16,37 @@ function App() {
   useEffect(() => {
     // Check if current path should show 404
     const path = window.location.pathname;
+    const hash = window.location.hash;
+    
+    // Valid paths for SPA
     const validPaths = [
       '/',
-      '/index.html',
-      '/#home',
-      '/#pricing',
-      '/#about',
-      '/#contact'
+      '/index.html'
     ];
 
-    // Check if it's a valid path or anchor link
-    const isValidPath = validPaths.includes(path) || 
-                       path === '/' || 
-                       path.startsWith('/#') ||
-                       path === '/index.html';
+    // Valid hash routes
+    const validHashes = [
+      '#home',
+      '#pricing', 
+      '#about',
+      '#contact'
+    ];
 
-    if (!isValidPath) {
+    // Check if it's a valid path or has valid hash
+    const isValidPath = validPaths.includes(path);
+    const hasValidHash = hash && validHashes.includes(hash);
+    const isRootWithHash = path === '/' && hash;
+
+    // For Netlify SPA routing - only show 404 for clearly invalid paths
+    // that don't match our expected patterns
+    const shouldShow404 = !isValidPath && 
+                         !isRootWithHash && 
+                         !path.startsWith('/transfer-') &&
+                         !path.startsWith('/aerodrom') &&
+                         path !== '/404' &&
+                         path.length > 1; // Don't 404 on root variations
+
+    if (shouldShow404) {
       setIs404(true);
       
       // Update document title for SEO
@@ -40,6 +55,15 @@ function App() {
         : language === 'ru'
         ? 'Страница не найдена - Transferko Трансфер в Аэропорт'
         : 'Stranica nije pronađena - Transferko Aerodromski Transfer';
+    } else {
+      setIs404(false);
+      
+      // Reset to default title
+      document.title = language === 'en'
+        ? 'Airport Transfer Novi Sad | Transferko - Reliable Transport to Airport'
+        : language === 'ru'
+        ? 'Трансфер в Аэропорт Нови Сад | Transferko - Надежная Перевозка'
+        : 'Aerodromski Transfer Novi Sad | Transferko - Pouzdani Prevoz do Aerodroma';
     }
   }, [language]);
 
